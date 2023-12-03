@@ -10,12 +10,12 @@ public class Main {
 
   
 
-   public void countsBySoh(int[] presentCapacities) {
-            this.sohPercentage = new int[presentCapacities.length];
+   public int[] countsBySoh(int[] presentCapacities) {
+            sohPercentage = new int[presentCapacities.length];
             for (int capacity : presentCapacities) {
                 // calculating the soh
                 int percentage = (100 * capacity) / rated_capacity;
-                this.sohPercentage[healthy + failed + exchange] = percentage;
+                sohPercentage[healthy + failed + exchange] = percentage;
                 // classification and counting according to each category
                 if (percentage > 80) {
                     healthy++;
