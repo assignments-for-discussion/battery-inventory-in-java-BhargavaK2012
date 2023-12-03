@@ -8,7 +8,7 @@ public class Main {
     public int rated_capacity = 120; // initial capacity mentioned in question
     public int[] sohPercentage; // used to store the state of health of each battery
 
-  };
+  
 
    public void countsBySoh(int[] presentCapacities) {
             this.sohPercentage = new int[presentCapacities.length];
@@ -27,7 +27,7 @@ public class Main {
             }
             return sohPercentage;
         }
-    };
+    
 
   static CountsBySoH countBatteriesByHealth(int[] presentCapacities) {
     CountsBySoH counts = new CountsBySoH();
@@ -48,4 +48,4 @@ public class Main {
   public static void main(String[] args) {
     testBucketingByHealth();
   }
-}
+
